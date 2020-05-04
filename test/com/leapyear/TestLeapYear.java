@@ -9,15 +9,20 @@ class TestLeapYear {
 	@Test
 	void TestIsLeapYear() {
 		LeapYear leapYear = new LeapYear();
-		boolean isLeapYear= leapYear.isLeapYear(2000);
+		boolean isLeapYear = leapYear.isLeapYear(2000);
 		assertTrue(isLeapYear);
-		
-		isLeapYear= leapYear.isLeapYear(2100);
+
+		isLeapYear = leapYear.isLeapYear(2100);
 		assertFalse(isLeapYear);
 
-
-		isLeapYear= leapYear.isLeapYear(1900);
+		isLeapYear = leapYear.isLeapYear(1900);
 		assertFalse(isLeapYear);
-	}	
+
+		isLeapYear = leapYear.isLeapYear(2012);
+		assertTrue(isLeapYear);
+		isLeapYear = leapYear.isLeapYear(2016);
+		assertTrue(isLeapYear);
+
+	}
 
 }
