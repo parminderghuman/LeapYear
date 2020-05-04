@@ -16,6 +16,8 @@ class TestLeapYear {
 		assertFalse(isLeapYear);
 
 
+		isLeapYear= leapYear.isLeapYear(1900);
+		assertFalse(isLeapYear);
 	}	
 
 }
