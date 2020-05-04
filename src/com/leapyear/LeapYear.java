@@ -9,6 +9,8 @@ public class LeapYear {
 			return false;
 		}else if(isDivisibleBy4(year) && !isDivisibleBy100(year)) {
 			return true;
+		}else if(!isDivisibleBy4(year) ) {
+			return false;
 		}
 		return false;
 	}

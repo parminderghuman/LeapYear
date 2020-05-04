@@ -22,6 +22,12 @@ class TestLeapYear {
 		assertTrue(isLeapYear);
 		isLeapYear = leapYear.isLeapYear(2016);
 		assertTrue(isLeapYear);
+		
+		isLeapYear = leapYear.isLeapYear(2017);
+		assertFalse(isLeapYear);
+
+		isLeapYear = leapYear.isLeapYear(2019);
+		assertFalse(isLeapYear);
 
 	}
 
