@@ -7,8 +7,15 @@ import org.junit.jupiter.api.Test;
 class TestLeapYear {
 
 	@Test
-	void test() {
+	void TestIsLeapYear() {
+		LeapYear leapYear = new LeapYear();
+		boolean isLeapYear= leapYear.isLeapYear(2000);
+		assertTrue(isLeapYear);
 		
-	}
+		isLeapYear= leapYear.isLeapYear(2100);
+		assertFalse(isLeapYear);
+
+
+	}	
 
 }
